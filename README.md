@@ -43,6 +43,14 @@
 - start 신호가 1이 되며 전송 시작 및 dut로 tx_data 전달
 - mon_next_event를 통해 monitor의 감시 시점을 제어
 
+#### monitor
+- driver의 mon_next_event 신호 대기
+- 8bit의 receive_data를 수집한 뒤, 이를 mon2scb를 통해서 scoreboard로 전송
+
+#### scoreboard
+- monitor가 수집한 receive_data를 mon2scb를 통해 받은 후, 실제값 tx_data와 비교
+- PASS / FAIL 여부를 판단하여 log에 출력
+- 다음 tr 값 생성을 위해 gen_next_event를 generator로 전달
 <br>
 
 ### UART_RX
