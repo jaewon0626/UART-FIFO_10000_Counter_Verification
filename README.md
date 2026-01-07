@@ -25,7 +25,7 @@
 
 ## Module별 시나리오 
 ### UART_TX
-<img width="697" height="440" alt="image" src="https://github.com/user-attachments/assets/48a98348-a48d-44d8-b90f-fc089e969538" />
+<img width="442" height="356" alt="image" src="https://github.com/user-attachments/assets/f5413be5-4b1a-4eff-a25a-c210e8bd5938" />
 <br>
 
 ### UART_RX
