@@ -21,9 +21,10 @@
 #### Driver: 생성된 데이터를 인터페이스를 통해 설계 모듈(DUT)에 입력 신호로 전달
 #### Monitor: DUT의 출력 신호를 관찰하고 이벤트 수집
 #### Scoreboard: 출력 데이터와 예상 결과값(Golden Model)을 비교하여 Pass/Fail 판별
+<br>
 
-## RISC-V Instruction Set
-<img width="2380" height="684" alt="image" src="https://github.com/user-attachments/assets/cd1cdcc8-23c5-4eea-a874-a54215ac40cc" />
+## Module별 시나리오 
+<img width="1297" height="1040" alt="image" src="https://github.com/user-attachments/assets/48a98348-a48d-44d8-b90f-fc089e969538" />
 <br>
 
 ## Top Block Diagram
