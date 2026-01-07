@@ -1,13 +1,24 @@
 # UART-FIFO_10000_Counter_Verification
 ### SystemVerilog를 통합 언어(설계+검증)로 사용하여 UART 통신 및 FIFO 모듈의 기능을 객체 지향 프로그래밍(OOP) 기반의 검증
 
-## RISC-V 개요
-<img width="711" height="333" alt="image" src="https://github.com/user-attachments/assets/10e840b9-78d1-450b-b570-993686fef505" />
+## 프로젝트 개요
+### SystemVerilog Verification의 특징
+#### - 통합 언어 : 설계 + 검증을 하나의 언어로 가능함
+#### - OOP(객체지향 프로그래밍)
+##### 캡슐화 : 데이터(속성)와 메서드(기능)을 한 번에 관리 -> 유지보수 용이
+##### 추상화 : 내부의 디테일한 기능을 몰라도 사용 가능(=모듈화)
+##### 다형성 : 상위 개념(부모 class)를 재정의하여 대입
+##### 상속 : 재사용성 + 새로운 기능 -> 확장성이 좋아짐
+#### Constraint random을 통해 Coverage 향상
+#### Assertion : 실시간 프로토콜 검증
+
+
+
 <br>
 <img width="1297" height="1040" alt="image" src="https://github.com/user-attachments/assets/2a2ecddf-41ca-4c6e-84ac-ad3cc8863bc8" />
 
 ## RISC-V Instruction Set
-### <img width="2380" height="684" alt="image" src="https://github.com/user-attachments/assets/cd1cdcc8-23c5-4eea-a874-a54215ac40cc" />
+<img width="2380" height="684" alt="image" src="https://github.com/user-attachments/assets/cd1cdcc8-23c5-4eea-a874-a54215ac40cc" />
 <br>
 
 ## Top Block Diagram
