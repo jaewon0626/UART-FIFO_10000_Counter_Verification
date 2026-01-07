@@ -33,6 +33,16 @@
 - monitor에서 감시를 위한 데이터 -> start, tx_busy, tx 
 - log에서 출력할 display 테스크를 생성
 
+#### generator
+- randomize를 통해 랜덤 stimulus 생성
+- 해당 랜덤값을 gen2drv를 통해 driver로 전달
+- scoreboard에서 검증 완료 gen_next_event를 대기
+
+#### driver
+- gen2drv를 통해 generator에서 랜덤값 수신 
+- start 신호가 1이 되며 전송 시작 및 dut로 tx_data 전달
+- mon_next_event를 통해 monitor의 감시 시점을 제어
+
 <br>
 
 ### UART_RX
