@@ -117,11 +117,11 @@
 - driver의 입력 신호 wr, rd, wdata와 dut의 출력 rdata, full, empty를 transaction에 저장하여 감시할 데이터 생성
 
 #### scoreboard
-##### Write 동작 처리
+##### - write 동작 처리
 - 최대 인덱스가 15인 queue를 선언
 - wr 신호가 1이면서, full이 아니면 push_back을 통해 맨 뒤에 값을 추가하며, pass_count++
 - display를 통해 data와 size를 log에 출력
-##### Read 동작 처리
+##### - read 동작 처리
 - rd 신호가 1이면서, empty가 아니면 pop_front를 통해 맨 앞에서부터 데이터를 내보내며, rdata와 expected_data를 비교하여 다를 경우 fail_count++ 
 - display를 통해 rdata와 expected_data를 log에 출력
 
@@ -130,8 +130,39 @@
 - 모든 전송 완료 후 최종 report를 출력
 <br>
 
+-------------------------------------------
+
 ### UART-FIFO Loopback
 <img width="440" height="356" alt="image" src="https://github.com/user-attachments/assets/5844272d-a883-4eb4-90c9-d55fb4a552f3" />
+<br>
+
+#### transaction
+- 랜덤 입력 데이터 -> 8bit tx_data
+- monitor에서 감시를 위한 데이터 -> start, tx_busy, tx 
+- log에서 출력할 display 테스크를 생성
+
+#### generator
+- randomize를 통해 랜덤 stimulus 생성
+- 해당 랜덤값을 gen2drv를 통해 driver로 전달
+- scoreboard에서 검증 완료 gen_next_event를 대기
+
+#### driver
+- gen2drv를 통해 generator에서 랜덤값 수신 
+- start 신호가 1이 되며 전송 시작 및 dut로 tx_data 전달
+- mon_next_event를 통해 monitor의 감시 시점을 제어
+
+#### monitor
+- driver의 mon_next_event 신호 대기
+- 8bit의 receive_data를 수집한 뒤, 이를 mon2scb를 통해서 scoreboard로 전송
+
+#### scoreboard
+- monitor가 수집한 receive_data를 mon2scb를 통해 받은 후, 실제값 tx_data와 비교
+- PASS / FAIL 여부를 판단하여 log에 출력
+- 다음 tr 값 생성을 위해 gen_next_event를 generator로 전달
+
+#### environment
+- gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
+- 모든 전송 완료 후 최종 report를 출력
 <br>
 
 ## Top Block Diagram
