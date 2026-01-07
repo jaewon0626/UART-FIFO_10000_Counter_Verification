@@ -29,7 +29,15 @@
 <br>
 
 ### UART_RX
-<img width="1296" height="1039" alt="image" src="https://github.com/user-attachments/assets/720df016-87ec-449e-b198-d392e7fcfcb7" />
+<img width="436" height="354" alt="image" src="https://github.com/user-attachments/assets/9db75e82-a939-4471-aa6a-3420fabe1c4e" />
+<br>
+
+### FIFO
+<img width="441" height="354" alt="image" src="https://github.com/user-attachments/assets/0383e4ae-7ac6-475e-b613-94cc2fc33767" />
+<br>
+
+### UART-FIFO Loopback
+<img width="440" height="356" alt="image" src="https://github.com/user-attachments/assets/5844272d-a883-4eb4-90c9-d55fb4a552f3" />
 <br>
 
 ## Top Block Diagram
