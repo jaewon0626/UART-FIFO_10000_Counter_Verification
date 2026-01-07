@@ -24,7 +24,12 @@
 <br>
 
 ## Module별 시나리오 
-<img width="897" height="640" alt="image" src="https://github.com/user-attachments/assets/48a98348-a48d-44d8-b90f-fc089e969538" />
+### UART_TX
+<img width="697" height="440" alt="image" src="https://github.com/user-attachments/assets/48a98348-a48d-44d8-b90f-fc089e969538" />
+<br>
+
+### UART_RX
+<img width="1296" height="1039" alt="image" src="https://github.com/user-attachments/assets/720df016-87ec-449e-b198-d392e7fcfcb7" />
 <br>
 
 ## Top Block Diagram
