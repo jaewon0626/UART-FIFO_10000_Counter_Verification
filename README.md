@@ -9,8 +9,8 @@
 - 추상화 : 내부의 디테일한 기능을 몰라도 사용 가능(=모듈화)
 - 다형성 : 상위 개념(부모 class)를 재정의하여 대입
 - 상속 : 재사용성 + 새로운 기능 -> 확장성이 좋아짐
-#### Constraint random을 통해 Coverage 향상
-#### Assertion : 실시간 프로토콜 검증
+#### - Constraint random을 통해 Coverage 향상
+#### - Assertion : 실시간 프로토콜 검증
 <br>
 
 ## 검증 환경 구성
