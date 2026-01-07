@@ -90,9 +90,44 @@
 #### environment
 - gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
 - 모든 전송 완료 후 최종 report를 출력
+<br>
 
 ### FIFO
 <img width="441" height="354" alt="image" src="https://github.com/user-attachments/assets/0383e4ae-7ac6-475e-b613-94cc2fc33767" />
+<br>
+
+#### transaction
+- 랜덤 입력 데이터 -> wr, rd, 8bit wdata
+- monitor에서 감시를 위한 데이터 -> 8bit rdata, full, empty
+- constraint를 통해 wr 1 : 80% / 0 : 20%로 설정
+- log에서 출력할 display 테스크를 생성
+
+#### generator
+- rand 변수들을 randomize를 통해 랜덤 stimulus 생성
+- 해당 랜덤값을 gen2drv를 통해 driver로 전달
+- scoreboard에서 검증 완료 gen_next_event를 대기
+
+#### driver
+- gen2drv를 통해 랜덤값 수신 
+- dut로 wr, rd, wdata 전달
+- mon_next_event를 통해 monitor의 감시 시점을 제어
+
+#### monitor
+- driver의 mon_next_event 신호 대기
+- driver의 입력 신호 wr, rd, wdata와 dut의 출력 rdata, full, empty를 transaction에 저장하여 감시할 데이터 생성
+
+#### scoreboard
+##### Write 동작 처리
+- 최대 인덱스가 15인 queue를 선언
+- wr 신호가 1이면서, full이 아니면 push_back을 통해 맨 뒤에 값을 추가하며, pass_count++
+- display를 통해 data와 size를 log에 출력
+##### Read 동작 처리
+- rd 신호가 1이면서, empty가 아니면 pop_front를 통해 맨 앞에서부터 데이터를 내보내며, rdata와 expected_data를 비교하여 다를 경우 fail_count++ 
+- display를 통해 rdata와 expected_data를 log에 출력
+
+#### environment
+- gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
+- 모든 전송 완료 후 최종 report를 출력
 <br>
 
 ### UART-FIFO Loopback
