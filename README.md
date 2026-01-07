@@ -173,34 +173,18 @@
 <img width="2118" height="1047" alt="image" src="https://github.com/user-attachments/assets/2b6dde43-9128-4a64-892e-e5c175ea08f1" />
 <br>
 
-## 특징
-### 1. 동작 방식
-#### 모든 명령어가 정확히 하나의 클록 사이클에 완료된다.
-#### Fetch → Decode → Execute → Memory → Write Back 단계가 한 사이클 내에 순차적으로 진행된다.
-<img width="928" height="209" alt="image" src="https://github.com/user-attachments/assets/6fe3d7a3-19eb-4a4f-bbdf-f23036e27153" />
-<br>
+## 검증 결과
+<img width="1046" height="272" alt="image" src="https://github.com/user-attachments/assets/8e1823d9-596b-47c6-bdb7-72a5343bfa7b" />
 
-### 2. 주요 특징
-#### 클록 주기 : 가장 느린 명령어(일반적으로 load)의 실행 시간에 맞춰 클록 주기가 결정된다.
-#### 하드웨어 구조 : 각 단계마다 별도의 하드웨어 유닛이 필요하다. (예: 별도의 명령어 메모리와 데이터 메모리, 여러 개의 ALU)
-#### CPI (Cycles Per Instruction) : 항상 1이다.
-#### 제어 유닛 (Control Unit)의 특징 :
-##### Combinational Logic: 멀티 사이클 프로세서가 FSM(Finite State Machine)을 사용하는 것과 달리, 싱글 사이클은 현재 명령어의 Opcode와 Funct 필드만 보고 즉시 모든 제어 신호(ALUOp, RegWrite, MemRead 등)를 생성하는 조합 회로로 구성된다. -> 단순하고 직관적임
-#### 데이터패스(Datapath) :
-##### - IF (Instruction Fetch): PC(Program Counter)가 가리키는 주소의 명령어 메모리에서 명령어를 가져옵니다. 동시에 PC는 PC + 4로 업데이트된다.
-##### - ID (Instruction Decode): 가져온 명령어를 해석하여 레지스터 파일에서 소스 레지스터(rs1, rs2) 값을 읽고, Control Unit이 제어 신호를 생성한다.
-##### - EX (Execute): ALU가 연산을 수행하거나, 주소 계산(Load/Store의 경우), 분기 조건 비교(Branch의 경우)를 수행한다.
-##### - MEM (Memory Access): Load/Store 명령어인 경우 데이터 메모리에 접근하여 값을 읽거나 쓰기 동작을 수행한다. (R-type 등은 이 단계 패스)
-##### - WB (Write Back): 연산 결과나 메모리에서 읽은 값을 레지스터 파일(rd)에 쓴다.
-<br>
+### UART_TX/RX
+- 모든 가능한 데이터 값(0~255)을 최소 1번씩 관찰하여 Coverage를 확보했으며, Start/Stop 비트가 정상적으로 동작함을 Waveform으로 확인
 
-### 3. 장단점
-#### [장점]
-##### 구현이 단순하고 이해하기 쉽다.
-##### 제어 로직이 간단하다.
-##### 예측 가능한 타이밍을 가진다.
+### FIFO
+- 공간이 가득 찬 상태(Full)와 비어 있는 상태(Empty)에서의 동작 검증
+- 가득 찬 상태에서 쓰기 시도 시 "Queue is full" 메시지를 출력하며 데이터 오버플로우를 방지
 
-#### [단점]
-##### 클록 주기가 길어 전체 성능이 낮다.
-##### 하드웨어 활용도가 낮다. (각 사이클마다 일부 유닛만 사용)
-##### 자원 낭비가 심함. (ALU, 메모리 등이 중복 배치)
+### Top Simulation
+- 보드 제어 : 버튼 입력을 통해 Up/Down 모드 변경, 현재값 Clear, 전체 초기화 기능이 정상 작동 확인
+- UART 제어: PC에서 ASCII 명령어('r', 'c', 'm')를 전송하여 카운터를 원격 제어하는 Loopback 동작을 성공적으로 시뮬레이션함
+
+### 결론: 총 200번 이상의 다양한 랜덤 테스트케이스를 수행하여 100% 성공(Pass) 하였으며, 설계된 UART-FIFO 시스템의 높은 신뢰성을 입증했습니다.
