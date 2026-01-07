@@ -7,8 +7,7 @@
 <img width="1297" height="1040" alt="image" src="https://github.com/user-attachments/assets/2a2ecddf-41ca-4c6e-84ac-ad3cc8863bc8" />
 
 ## RISC-V Instruction Set
-<img width="1498" height="922" alt="Image" src="https://github.com/user-attachments/assets/613a6f4d-0243-456f-893c-e0e4177eca6e" />
-<img width="2380" height="684" alt="image" src="https://github.com/user-attachments/assets/cd1cdcc8-23c5-4eea-a874-a54215ac40cc" />
+### <img width="2380" height="684" alt="image" src="https://github.com/user-attachments/assets/cd1cdcc8-23c5-4eea-a874-a54215ac40cc" />
 <br>
 
 ## Top Block Diagram
