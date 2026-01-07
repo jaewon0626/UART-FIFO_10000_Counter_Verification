@@ -174,7 +174,7 @@
 <br>
 
 ## 검증 결과
-<img width="1046" height="272" alt="image" src="https://github.com/user-attachments/assets/8e1823d9-596b-47c6-bdb7-72a5343bfa7b" />
+<img width="1546" height="772" alt="image" src="https://github.com/user-attachments/assets/8e1823d9-596b-47c6-bdb7-72a5343bfa7b" />
 
 ### UART_TX/RX
 - 모든 가능한 데이터 값(0~255)을 최소 1번씩 관찰하여 Coverage를 확보했으며, Start/Stop 비트가 정상적으로 동작함을 Waveform으로 확인
