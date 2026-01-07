@@ -1,0 +1,414 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+[DRV] reset_done!
+=========STARTING TEST with 100 transactions ============
+               35000, [GEN] wdata : 0xb0, rdata : 0x0
+               35000, [GEN] wdata : 0x1e, rdata : 0x0
+               35000, [GEN] wdata : 0x86, rdata : 0x0
+               35000, [GEN] wdata : 0x63, rdata : 0x0
+               35000, [GEN] wdata : 0xd3, rdata : 0x0
+               35000, [GEN] wdata : 0x2d, rdata : 0x0
+               35000, [GEN] wdata : 0x95, rdata : 0x0
+               35000, [GEN] wdata : 0xca, rdata : 0x0
+               35000, [GEN] wdata : 0x91, rdata : 0x0
+               35000, [GEN] wdata : 0x86, rdata : 0x0
+               35000, [GEN] wdata : 0xab, rdata : 0x0
+               35000, [GEN] wdata : 0xb1, rdata : 0x0
+               35000, [GEN] wdata : 0xdc, rdata : 0x0
+               35000, [GEN] wdata : 0x96, rdata : 0x0
+               35000, [GEN] wdata : 0xfb, rdata : 0x0
+               35000, [GEN] wdata : 0xcc, rdata : 0x0
+               35000, [GEN] wdata : 0x65, rdata : 0x0
+               35000, [GEN] wdata : 0xc5, rdata : 0x0
+               35000, [GEN] wdata : 0xcc, rdata : 0x0
+               35000, [GEN] wdata : 0x8d, rdata : 0x0
+               35000, [GEN] wdata : 0x9e, rdata : 0x0
+               35000, [GEN] wdata : 0xe6, rdata : 0x0
+               35000, [GEN] wdata : 0x91, rdata : 0x0
+               35000, [GEN] wdata : 0xee, rdata : 0x0
+               35000, [GEN] wdata : 0xa, rdata : 0x0
+               35000, [GEN] wdata : 0xac, rdata : 0x0
+               35000, [GEN] wdata : 0xe9, rdata : 0x0
+               35000, [GEN] wdata : 0xdf, rdata : 0x0
+               35000, [GEN] wdata : 0xfd, rdata : 0x0
+               35000, [GEN] wdata : 0xdc, rdata : 0x0
+               35000, [GEN] wdata : 0x6f, rdata : 0x0
+               35000, [GEN] wdata : 0x22, rdata : 0x0
+               35000, [GEN] wdata : 0xb7, rdata : 0x0
+               35000, [GEN] wdata : 0x7f, rdata : 0x0
+               35000, [GEN] wdata : 0x45, rdata : 0x0
+               35000, [GEN] wdata : 0xfb, rdata : 0x0
+               35000, [GEN] wdata : 0x84, rdata : 0x0
+               35000, [GEN] wdata : 0xfd, rdata : 0x0
+               35000, [GEN] wdata : 0x7e, rdata : 0x0
+               35000, [GEN] wdata : 0xb3, rdata : 0x0
+               35000, [GEN] wdata : 0xc5, rdata : 0x0
+               35000, [GEN] wdata : 0x34, rdata : 0x0
+               35000, [GEN] wdata : 0xd2, rdata : 0x0
+               35000, [GEN] wdata : 0x6c, rdata : 0x0
+               35000, [GEN] wdata : 0x88, rdata : 0x0
+               35000, [GEN] wdata : 0xc2, rdata : 0x0
+               35000, [GEN] wdata : 0x92, rdata : 0x0
+               35000, [GEN] wdata : 0x59, rdata : 0x0
+               35000, [GEN] wdata : 0x2e, rdata : 0x0
+               35000, [GEN] wdata : 0x6b, rdata : 0x0
+               35000, [GEN] wdata : 0x50, rdata : 0x0
+               35000, [GEN] wdata : 0xc3, rdata : 0x0
+               35000, [GEN] wdata : 0x9b, rdata : 0x0
+               35000, [GEN] wdata : 0xfb, rdata : 0x0
+               35000, [GEN] wdata : 0x87, rdata : 0x0
+               35000, [GEN] wdata : 0x6, rdata : 0x0
+               35000, [GEN] wdata : 0xb7, rdata : 0x0
+               35000, [GEN] wdata : 0x3a, rdata : 0x0
+               35000, [GEN] wdata : 0x37, rdata : 0x0
+               35000, [GEN] wdata : 0xb0, rdata : 0x0
+               35000, [GEN] wdata : 0x52, rdata : 0x0
+               35000, [GEN] wdata : 0x1, rdata : 0x0
+               35000, [GEN] wdata : 0xe7, rdata : 0x0
+               35000, [GEN] wdata : 0x7b, rdata : 0x0
+               35000, [GEN] wdata : 0x76, rdata : 0x0
+               35000, [GEN] wdata : 0x78, rdata : 0x0
+               35000, [GEN] wdata : 0x6d, rdata : 0x0
+               35000, [GEN] wdata : 0x8, rdata : 0x0
+               35000, [GEN] wdata : 0xe6, rdata : 0x0
+               35000, [GEN] wdata : 0xc4, rdata : 0x0
+               35000, [GEN] wdata : 0xe9, rdata : 0x0
+               35000, [GEN] wdata : 0x85, rdata : 0x0
+               35000, [GEN] wdata : 0x73, rdata : 0x0
+               35000, [GEN] wdata : 0xb1, rdata : 0x0
+               35000, [GEN] wdata : 0xf, rdata : 0x0
+               35000, [GEN] wdata : 0xad, rdata : 0x0
+               35000, [GEN] wdata : 0xae, rdata : 0x0
+               35000, [GEN] wdata : 0x71, rdata : 0x0
+               35000, [GEN] wdata : 0xc0, rdata : 0x0
+               35000, [GEN] wdata : 0x91, rdata : 0x0
+               35000, [GEN] wdata : 0x35, rdata : 0x0
+               35000, [GEN] wdata : 0xf5, rdata : 0x0
+               35000, [GEN] wdata : 0x9a, rdata : 0x0
+               35000, [GEN] wdata : 0x52, rdata : 0x0
+               35000, [GEN] wdata : 0x78, rdata : 0x0
+               35000, [GEN] wdata : 0x6a, rdata : 0x0
+               35000, [GEN] wdata : 0x2d, rdata : 0x0
+               35000, [GEN] wdata : 0x6, rdata : 0x0
+               35000, [GEN] wdata : 0xa1, rdata : 0x0
+               35000, [GEN] wdata : 0x7, rdata : 0x0
+               35000, [GEN] wdata : 0xa4, rdata : 0x0
+               35000, [GEN] wdata : 0x89, rdata : 0x0
+               35000, [GEN] wdata : 0xd4, rdata : 0x0
+               35000, [GEN] wdata : 0x43, rdata : 0x0
+               35000, [GEN] wdata : 0xdb, rdata : 0x0
+               35000, [GEN] wdata : 0xcf, rdata : 0x0
+               35000, [GEN] wdata : 0x8e, rdata : 0x0
+               35000, [GEN] wdata : 0xd0, rdata : 0x0
+               35000, [GEN] wdata : 0xa5, rdata : 0x0
+               35000, [GEN] wdata : 0xce, rdata : 0x0
+[35000 ns] [GEN] Finished generating 100 transactions.
+               35000, [DRV] wdata : 0xb0, rdata : 0x0
+          1041705000, [DRV] wdata : 0x1e, rdata : 0x0
+          1881504000, [MON] wdata : 0x0, rdata : 0xb0
+[SCB] PASS : Expected 0xb0, Got 0xb0
+          2083375000, [DRV] wdata : 0x86, rdata : 0x0
+          2923104000, [MON] wdata : 0x0, rdata : 0x1e
+[SCB] PASS : Expected 0x1e, Got 0x1e
+          3125045000, [DRV] wdata : 0x63, rdata : 0x0
+          3964704000, [MON] wdata : 0x0, rdata : 0x86
+[SCB] PASS : Expected 0x86, Got 0x86
+          4166715000, [DRV] wdata : 0xd3, rdata : 0x0
+          5006304000, [MON] wdata : 0x0, rdata : 0x63
+[SCB] PASS : Expected 0x63, Got 0x63
+          5208385000, [DRV] wdata : 0x2d, rdata : 0x0
+          6047904000, [MON] wdata : 0x0, rdata : 0xd3
+[SCB] PASS : Expected 0xd3, Got 0xd3
+          6250055000, [DRV] wdata : 0x95, rdata : 0x0
+          7089504000, [MON] wdata : 0x0, rdata : 0x2d
+[SCB] PASS : Expected 0x2d, Got 0x2d
+          7291725000, [DRV] wdata : 0xca, rdata : 0x0
+          8131104000, [MON] wdata : 0x0, rdata : 0x95
+[SCB] PASS : Expected 0x95, Got 0x95
+          8333395000, [DRV] wdata : 0x91, rdata : 0x0
+          9172704000, [MON] wdata : 0x0, rdata : 0xca
+[SCB] PASS : Expected 0xca, Got 0xca
+          9375065000, [DRV] wdata : 0x86, rdata : 0x0
+         10214304000, [MON] wdata : 0x0, rdata : 0x91
+[SCB] PASS : Expected 0x91, Got 0x91
+         10416735000, [DRV] wdata : 0xab, rdata : 0x0
+         11255904000, [MON] wdata : 0x0, rdata : 0x86
+[SCB] PASS : Expected 0x86, Got 0x86
+         11458405000, [DRV] wdata : 0xb1, rdata : 0x0
+         12297504000, [MON] wdata : 0x0, rdata : 0xab
+[SCB] PASS : Expected 0xab, Got 0xab
+         12500075000, [DRV] wdata : 0xdc, rdata : 0x0
+         13339104000, [MON] wdata : 0x0, rdata : 0xb1
+[SCB] PASS : Expected 0xb1, Got 0xb1
+         13541745000, [DRV] wdata : 0x96, rdata : 0x0
+         14380704000, [MON] wdata : 0x0, rdata : 0xdc
+[SCB] PASS : Expected 0xdc, Got 0xdc
+         14583415000, [DRV] wdata : 0xfb, rdata : 0x0
+         15422304000, [MON] wdata : 0x0, rdata : 0x96
+[SCB] PASS : Expected 0x96, Got 0x96
+         15625085000, [DRV] wdata : 0xcc, rdata : 0x0
+         16463904000, [MON] wdata : 0x0, rdata : 0xfb
+[SCB] PASS : Expected 0xfb, Got 0xfb
+         16666755000, [DRV] wdata : 0x65, rdata : 0x0
+         17505504000, [MON] wdata : 0x0, rdata : 0xcc
+[SCB] PASS : Expected 0xcc, Got 0xcc
+         17708425000, [DRV] wdata : 0xc5, rdata : 0x0
+         18547104000, [MON] wdata : 0x0, rdata : 0x65
+[SCB] PASS : Expected 0x65, Got 0x65
+         18750095000, [DRV] wdata : 0xcc, rdata : 0x0
+         19588704000, [MON] wdata : 0x0, rdata : 0xc5
+[SCB] PASS : Expected 0xc5, Got 0xc5
+         19791765000, [DRV] wdata : 0x8d, rdata : 0x0
+         20630304000, [MON] wdata : 0x0, rdata : 0xcc
+[SCB] PASS : Expected 0xcc, Got 0xcc
+         20833435000, [DRV] wdata : 0x9e, rdata : 0x0
+         21671904000, [MON] wdata : 0x0, rdata : 0x8d
+[SCB] PASS : Expected 0x8d, Got 0x8d
+         21875105000, [DRV] wdata : 0xe6, rdata : 0x0
+         22713504000, [MON] wdata : 0x0, rdata : 0x9e
+[SCB] PASS : Expected 0x9e, Got 0x9e
+         22916775000, [DRV] wdata : 0x91, rdata : 0x0
+         23755104000, [MON] wdata : 0x0, rdata : 0xe6
+[SCB] PASS : Expected 0xe6, Got 0xe6
+         23958445000, [DRV] wdata : 0xee, rdata : 0x0
+         24796704000, [MON] wdata : 0x0, rdata : 0x91
+[SCB] PASS : Expected 0x91, Got 0x91
+         25000115000, [DRV] wdata : 0xa, rdata : 0x0
+         25838304000, [MON] wdata : 0x0, rdata : 0xee
+[SCB] PASS : Expected 0xee, Got 0xee
+         26041785000, [DRV] wdata : 0xac, rdata : 0x0
+         26879904000, [MON] wdata : 0x0, rdata : 0xa
+[SCB] PASS : Expected 0xa, Got 0xa
+         27083455000, [DRV] wdata : 0xe9, rdata : 0x0
+         27921504000, [MON] wdata : 0x0, rdata : 0xac
+[SCB] PASS : Expected 0xac, Got 0xac
+         28125125000, [DRV] wdata : 0xdf, rdata : 0x0
+         28963104000, [MON] wdata : 0x0, rdata : 0xe9
+[SCB] PASS : Expected 0xe9, Got 0xe9
+         29166795000, [DRV] wdata : 0xfd, rdata : 0x0
+         30004704000, [MON] wdata : 0x0, rdata : 0xdf
+[SCB] PASS : Expected 0xdf, Got 0xdf
+         30208465000, [DRV] wdata : 0xdc, rdata : 0x0
+         31046304000, [MON] wdata : 0x0, rdata : 0xfd
+[SCB] PASS : Expected 0xfd, Got 0xfd
+         31250135000, [DRV] wdata : 0x6f, rdata : 0x0
+         32087904000, [MON] wdata : 0x0, rdata : 0xdc
+[SCB] PASS : Expected 0xdc, Got 0xdc
+         32291805000, [DRV] wdata : 0x22, rdata : 0x0
+         33129504000, [MON] wdata : 0x0, rdata : 0x6f
+[SCB] PASS : Expected 0x6f, Got 0x6f
+         33333475000, [DRV] wdata : 0xb7, rdata : 0x0
+         34171104000, [MON] wdata : 0x0, rdata : 0x22
+[SCB] PASS : Expected 0x22, Got 0x22
+         34375145000, [DRV] wdata : 0x7f, rdata : 0x0
+         35212704000, [MON] wdata : 0x0, rdata : 0xb7
+[SCB] PASS : Expected 0xb7, Got 0xb7
+         35416815000, [DRV] wdata : 0x45, rdata : 0x0
+         36254304000, [MON] wdata : 0x0, rdata : 0x7f
+[SCB] PASS : Expected 0x7f, Got 0x7f
+         36458485000, [DRV] wdata : 0xfb, rdata : 0x0
+         37295904000, [MON] wdata : 0x0, rdata : 0x45
+[SCB] PASS : Expected 0x45, Got 0x45
+         37500155000, [DRV] wdata : 0x84, rdata : 0x0
+         38337504000, [MON] wdata : 0x0, rdata : 0xfb
+[SCB] PASS : Expected 0xfb, Got 0xfb
+         38541825000, [DRV] wdata : 0xfd, rdata : 0x0
+         39379104000, [MON] wdata : 0x0, rdata : 0x84
+[SCB] PASS : Expected 0x84, Got 0x84
+         39583495000, [DRV] wdata : 0x7e, rdata : 0x0
+         40420704000, [MON] wdata : 0x0, rdata : 0xfd
+[SCB] PASS : Expected 0xfd, Got 0xfd
+         40625165000, [DRV] wdata : 0xb3, rdata : 0x0
+         41462304000, [MON] wdata : 0x0, rdata : 0x7e
+[SCB] PASS : Expected 0x7e, Got 0x7e
+         41666835000, [DRV] wdata : 0xc5, rdata : 0x0
+         42503904000, [MON] wdata : 0x0, rdata : 0xb3
+[SCB] PASS : Expected 0xb3, Got 0xb3
+         42708505000, [DRV] wdata : 0x34, rdata : 0x0
+         43545504000, [MON] wdata : 0x0, rdata : 0xc5
+[SCB] PASS : Expected 0xc5, Got 0xc5
+         43750175000, [DRV] wdata : 0xd2, rdata : 0x0
+         44587104000, [MON] wdata : 0x0, rdata : 0x34
+[SCB] PASS : Expected 0x34, Got 0x34
+         44791845000, [DRV] wdata : 0x6c, rdata : 0x0
+         45628704000, [MON] wdata : 0x0, rdata : 0xd2
+[SCB] PASS : Expected 0xd2, Got 0xd2
+         45833515000, [DRV] wdata : 0x88, rdata : 0x0
+         46670304000, [MON] wdata : 0x0, rdata : 0x6c
+[SCB] PASS : Expected 0x6c, Got 0x6c
+         46875185000, [DRV] wdata : 0xc2, rdata : 0x0
+         47711904000, [MON] wdata : 0x0, rdata : 0x88
+[SCB] PASS : Expected 0x88, Got 0x88
+         47916855000, [DRV] wdata : 0x92, rdata : 0x0
+         48753504000, [MON] wdata : 0x0, rdata : 0xc2
+[SCB] PASS : Expected 0xc2, Got 0xc2
+         48958525000, [DRV] wdata : 0x59, rdata : 0x0
+         49795104000, [MON] wdata : 0x0, rdata : 0x92
+[SCB] PASS : Expected 0x92, Got 0x92
+         50000195000, [DRV] wdata : 0x2e, rdata : 0x0
+         50836704000, [MON] wdata : 0x0, rdata : 0x59
+[SCB] PASS : Expected 0x59, Got 0x59
+         51041865000, [DRV] wdata : 0x6b, rdata : 0x0
+         51878304000, [MON] wdata : 0x0, rdata : 0x2e
+[SCB] PASS : Expected 0x2e, Got 0x2e
+         52083535000, [DRV] wdata : 0x50, rdata : 0x0
+         52919904000, [MON] wdata : 0x0, rdata : 0x6b
+[SCB] PASS : Expected 0x6b, Got 0x6b
+         53125205000, [DRV] wdata : 0xc3, rdata : 0x0
+         53961504000, [MON] wdata : 0x0, rdata : 0x50
+[SCB] PASS : Expected 0x50, Got 0x50
+         54166875000, [DRV] wdata : 0x9b, rdata : 0x0
+         55003104000, [MON] wdata : 0x0, rdata : 0xc3
+[SCB] PASS : Expected 0xc3, Got 0xc3
+         55208545000, [DRV] wdata : 0xfb, rdata : 0x0
+         56044704000, [MON] wdata : 0x0, rdata : 0x9b
+[SCB] PASS : Expected 0x9b, Got 0x9b
+         56250215000, [DRV] wdata : 0x87, rdata : 0x0
+         57086304000, [MON] wdata : 0x0, rdata : 0xfb
+[SCB] PASS : Expected 0xfb, Got 0xfb
+         57291885000, [DRV] wdata : 0x6, rdata : 0x0
+         58127904000, [MON] wdata : 0x0, rdata : 0x87
+[SCB] PASS : Expected 0x87, Got 0x87
+         58333555000, [DRV] wdata : 0xb7, rdata : 0x0
+         59169504000, [MON] wdata : 0x0, rdata : 0x6
+[SCB] PASS : Expected 0x6, Got 0x6
+         59375225000, [DRV] wdata : 0x3a, rdata : 0x0
+         60211104000, [MON] wdata : 0x0, rdata : 0xb7
+[SCB] PASS : Expected 0xb7, Got 0xb7
+         60416895000, [DRV] wdata : 0x37, rdata : 0x0
+         61252704000, [MON] wdata : 0x0, rdata : 0x3a
+[SCB] PASS : Expected 0x3a, Got 0x3a
+         61458565000, [DRV] wdata : 0xb0, rdata : 0x0
+         62294304000, [MON] wdata : 0x0, rdata : 0x37
+[SCB] PASS : Expected 0x37, Got 0x37
+         62500235000, [DRV] wdata : 0x52, rdata : 0x0
+         63335904000, [MON] wdata : 0x0, rdata : 0xb0
+[SCB] PASS : Expected 0xb0, Got 0xb0
+         63541905000, [DRV] wdata : 0x1, rdata : 0x0
+         64377504000, [MON] wdata : 0x0, rdata : 0x52
+[SCB] PASS : Expected 0x52, Got 0x52
+         64583575000, [DRV] wdata : 0xe7, rdata : 0x0
+         65419104000, [MON] wdata : 0x0, rdata : 0x1
+[SCB] PASS : Expected 0x1, Got 0x1
+         65625245000, [DRV] wdata : 0x7b, rdata : 0x0
+         66460704000, [MON] wdata : 0x0, rdata : 0xe7
+[SCB] PASS : Expected 0xe7, Got 0xe7
+         66666915000, [DRV] wdata : 0x76, rdata : 0x0
+         67502304000, [MON] wdata : 0x0, rdata : 0x7b
+[SCB] PASS : Expected 0x7b, Got 0x7b
+         67708585000, [DRV] wdata : 0x78, rdata : 0x0
+         68543904000, [MON] wdata : 0x0, rdata : 0x76
+[SCB] PASS : Expected 0x76, Got 0x76
+         68750255000, [DRV] wdata : 0x6d, rdata : 0x0
+         69585504000, [MON] wdata : 0x0, rdata : 0x78
+[SCB] PASS : Expected 0x78, Got 0x78
+         69791925000, [DRV] wdata : 0x8, rdata : 0x0
+         70627104000, [MON] wdata : 0x0, rdata : 0x6d
+[SCB] PASS : Expected 0x6d, Got 0x6d
+         70833595000, [DRV] wdata : 0xe6, rdata : 0x0
+         71668704000, [MON] wdata : 0x0, rdata : 0x8
+[SCB] PASS : Expected 0x8, Got 0x8
+         71875265000, [DRV] wdata : 0xc4, rdata : 0x0
+         72710304000, [MON] wdata : 0x0, rdata : 0xe6
+[SCB] PASS : Expected 0xe6, Got 0xe6
+         72916935000, [DRV] wdata : 0xe9, rdata : 0x0
+         73751904000, [MON] wdata : 0x0, rdata : 0xc4
+[SCB] PASS : Expected 0xc4, Got 0xc4
+         73958605000, [DRV] wdata : 0x85, rdata : 0x0
+         74793504000, [MON] wdata : 0x0, rdata : 0xe9
+[SCB] PASS : Expected 0xe9, Got 0xe9
+         75000275000, [DRV] wdata : 0x73, rdata : 0x0
+         75835104000, [MON] wdata : 0x0, rdata : 0x85
+[SCB] PASS : Expected 0x85, Got 0x85
+         76041945000, [DRV] wdata : 0xb1, rdata : 0x0
+         76876704000, [MON] wdata : 0x0, rdata : 0x73
+[SCB] PASS : Expected 0x73, Got 0x73
+         77083615000, [DRV] wdata : 0xf, rdata : 0x0
+         77918304000, [MON] wdata : 0x0, rdata : 0xb1
+[SCB] PASS : Expected 0xb1, Got 0xb1
+         78125285000, [DRV] wdata : 0xad, rdata : 0x0
+         78959904000, [MON] wdata : 0x0, rdata : 0xf
+[SCB] PASS : Expected 0xf, Got 0xf
+         79166955000, [DRV] wdata : 0xae, rdata : 0x0
+         80001504000, [MON] wdata : 0x0, rdata : 0xad
+[SCB] PASS : Expected 0xad, Got 0xad
+         80208625000, [DRV] wdata : 0x71, rdata : 0x0
+         81043104000, [MON] wdata : 0x0, rdata : 0xae
+[SCB] PASS : Expected 0xae, Got 0xae
+         81250295000, [DRV] wdata : 0xc0, rdata : 0x0
+         82084704000, [MON] wdata : 0x0, rdata : 0x71
+[SCB] PASS : Expected 0x71, Got 0x71
+         82291965000, [DRV] wdata : 0x91, rdata : 0x0
+         83126304000, [MON] wdata : 0x0, rdata : 0xc0
+[SCB] PASS : Expected 0xc0, Got 0xc0
+         83333635000, [DRV] wdata : 0x35, rdata : 0x0
+         84167904000, [MON] wdata : 0x0, rdata : 0x91
+[SCB] PASS : Expected 0x91, Got 0x91
+         84375305000, [DRV] wdata : 0xf5, rdata : 0x0
+         85209504000, [MON] wdata : 0x0, rdata : 0x35
+[SCB] PASS : Expected 0x35, Got 0x35
+         85416975000, [DRV] wdata : 0x9a, rdata : 0x0
+         86251104000, [MON] wdata : 0x0, rdata : 0xf5
+[SCB] PASS : Expected 0xf5, Got 0xf5
+         86458645000, [DRV] wdata : 0x52, rdata : 0x0
+         87292704000, [MON] wdata : 0x0, rdata : 0x9a
+[SCB] PASS : Expected 0x9a, Got 0x9a
+         87500315000, [DRV] wdata : 0x78, rdata : 0x0
+         88334304000, [MON] wdata : 0x0, rdata : 0x52
+[SCB] PASS : Expected 0x52, Got 0x52
+         88541985000, [DRV] wdata : 0x6a, rdata : 0x0
+         89375904000, [MON] wdata : 0x0, rdata : 0x78
+[SCB] PASS : Expected 0x78, Got 0x78
+         89583655000, [DRV] wdata : 0x2d, rdata : 0x0
+         90417504000, [MON] wdata : 0x0, rdata : 0x6a
+[SCB] PASS : Expected 0x6a, Got 0x6a
+         90625325000, [DRV] wdata : 0x6, rdata : 0x0
+         91459104000, [MON] wdata : 0x0, rdata : 0x2d
+[SCB] PASS : Expected 0x2d, Got 0x2d
+         91666995000, [DRV] wdata : 0xa1, rdata : 0x0
+         92500704000, [MON] wdata : 0x0, rdata : 0x6
+[SCB] PASS : Expected 0x6, Got 0x6
+         92708665000, [DRV] wdata : 0x7, rdata : 0x0
+         93542304000, [MON] wdata : 0x0, rdata : 0xa1
+[SCB] PASS : Expected 0xa1, Got 0xa1
+         93750335000, [DRV] wdata : 0xa4, rdata : 0x0
+         94583904000, [MON] wdata : 0x0, rdata : 0x7
+[SCB] PASS : Expected 0x7, Got 0x7
+         94792005000, [DRV] wdata : 0x89, rdata : 0x0
+         95625504000, [MON] wdata : 0x0, rdata : 0xa4
+[SCB] PASS : Expected 0xa4, Got 0xa4
+         95833675000, [DRV] wdata : 0xd4, rdata : 0x0
+         96667104000, [MON] wdata : 0x0, rdata : 0x89
+[SCB] PASS : Expected 0x89, Got 0x89
+         96875345000, [DRV] wdata : 0x43, rdata : 0x0
+         97708704000, [MON] wdata : 0x0, rdata : 0xd4
+[SCB] PASS : Expected 0xd4, Got 0xd4
+         97917015000, [DRV] wdata : 0xdb, rdata : 0x0
+         98756814000, [MON] wdata : 0x0, rdata : 0x43
+[SCB] PASS : Expected 0x43, Got 0x43
+         98958685000, [DRV] wdata : 0xcf, rdata : 0x0
+         99798414000, [MON] wdata : 0x0, rdata : 0xdb
+[SCB] PASS : Expected 0xdb, Got 0xdb
+        100000355000, [DRV] wdata : 0x8e, rdata : 0x0
+        100840014000, [MON] wdata : 0x0, rdata : 0xcf
+[SCB] PASS : Expected 0xcf, Got 0xcf
+        101042025000, [DRV] wdata : 0xd0, rdata : 0x0
+        101881614000, [MON] wdata : 0x0, rdata : 0x8e
+[SCB] PASS : Expected 0x8e, Got 0x8e
+        102083695000, [DRV] wdata : 0xa5, rdata : 0x0
+        102923214000, [MON] wdata : 0x0, rdata : 0xd0
+[SCB] PASS : Expected 0xd0, Got 0xd0
+        103125365000, [DRV] wdata : 0xce, rdata : 0x0
+        103964814000, [MON] wdata : 0x0, rdata : 0xa5
+[SCB] PASS : Expected 0xa5, Got 0xa5
+        105006414000, [MON] wdata : 0x0, rdata : 0xce
+[SCB] PASS : Expected 0xce, Got 0xce
+=======================================
+==============task report==============
+=======================================
+==     Pass Test :         100      ==
+==     Fail Test :           0      ==
+=======================================
+======== Test bench is finish =========
+=======================================
+$stop called at time : 105008414 ns : File "D:/working/FPGA/2025_09_11_UART-FIFO/2025_09_11_UART-FIFO.srcs/sim_1/new/tb_uart_fifo_top.sv" Line 277
