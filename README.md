@@ -51,11 +51,45 @@
 - monitor가 수집한 receive_data를 mon2scb를 통해 받은 후, 실제값 tx_data와 비교
 - PASS / FAIL 여부를 판단하여 log에 출력
 - 다음 tr 값 생성을 위해 gen_next_event를 generator로 전달
+
+#### environment
+- gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
+- 모든 전송 완료 후 최종 report를 출력
 <br>
 
 ### UART_RX
 <img width="436" height="354" alt="image" src="https://github.com/user-attachments/assets/9db75e82-a939-4471-aa6a-3420fabe1c4e" />
 <br>
+
+#### transaction
+- 랜덤 입력 데이터 -> 8bit wdata
+- monitor에서 감시를 위한 데이터 -> 8bit rdata, rx_done
+- log에서 출력할 display 테스크를 생성
+
+#### generator
+- randomize를 통해 랜덤 stimulus 생성
+- 해당 랜덤값을 gen2drv를 통해 driver로 전달
+- 마찬가지로 gen2scb를 통해 scoreboard로 전달
+- scoreboard에서 검증 완료 gen_next_event를 대기
+
+#### driver
+- gen2drv를 통해 generator에서 랜덤값 수신  
+- TX의 역할을 수행하는 drive_one_packet 테스크를 생성
+- Task에서 생성한 8bit의 랜덤값 wdata를 dut로 전송
+
+#### monitor
+- rx_done의 posedge 신호를 대기
+- 8bit의 실제값 rdata를 mon2scb를 통해서 scoreboard로 전송
+
+#### scoreboard
+- gen2scb를 통해 generator에서 예상값을 수신
+- mon2scb를 통해 monitor에서 실제값을 수신
+- 두 값을 비교하여 PASS / FAIL 여부를 판단한 뒤 log에 출력
+- 다음 tr 값 생성을 위해 gen_next_event를 generator로 전달
+
+#### environment
+- gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
+- 모든 전송 완료 후 최종 report를 출력
 
 ### FIFO
 <img width="441" height="354" alt="image" src="https://github.com/user-attachments/assets/0383e4ae-7ac6-475e-b613-94cc2fc33767" />
