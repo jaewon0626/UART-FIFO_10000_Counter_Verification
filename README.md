@@ -57,6 +57,8 @@
 - 모든 전송 완료 후 최종 report를 출력
 <br>
 
+-------------------------------------------
+
 ### UART_RX
 <img width="436" height="354" alt="image" src="https://github.com/user-attachments/assets/9db75e82-a939-4471-aa6a-3420fabe1c4e" />
 <br>
@@ -91,6 +93,8 @@
 - gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
 - 모든 전송 완료 후 최종 report를 출력
 <br>
+
+-------------------------------------------
 
 ### FIFO
 <img width="441" height="354" alt="image" src="https://github.com/user-attachments/assets/0383e4ae-7ac6-475e-b613-94cc2fc33767" />
@@ -137,32 +141,35 @@
 <br>
 
 #### transaction
-- 랜덤 입력 데이터 -> 8bit tx_data
-- monitor에서 감시를 위한 데이터 -> start, tx_busy, tx 
+- 랜덤 입력 데이터 -> 8bit wdata
+- monitor에서 감시를 위한 데이터 -> 8bit rdata
 - log에서 출력할 display 테스크를 생성
 
 #### generator
-- randomize를 통해 랜덤 stimulus 생성
-- 해당 랜덤값을 gen2drv를 통해 driver로 전달
-- scoreboard에서 검증 완료 gen_next_event를 대기
+- randomize() 를 통해 random data 값 생성
+- 생성된 랜덤값을 gen2drv_mbox를 통해 driver전달
+- gen2scb_mbox를 통해 scoreboard로 전달
 
 #### driver
-- gen2drv를 통해 generator에서 랜덤값 수신 
-- start 신호가 1이 되며 전송 시작 및 dut로 tx_data 전달
-- mon_next_event를 통해 monitor의 감시 시점을 제어
+- gen2drv_mbox .get을 통해서 generator로부터 데이터를 받은 후, tr에 저장
+- tr.wdata를 uart 프로토콜에 맞는 시리얼 신호로 변환하여 전송
 
 #### monitor
-- driver의 mon_next_event 신호 대기
-- 8bit의 receive_data를 수집한 뒤, 이를 mon2scb를 통해서 scoreboard로 전송
+- tx 신호가 1에서 0으로 떨어지는 시점, 즉 시작을 알리는 start bit를 기다림
+- 8개의 데이터 비트를 순서대로 샘플링
+- 샘플링된 데이터를 mon2scb_mbox에 .put 하여 전달 
 
 #### scoreboard
-- monitor가 수집한 receive_data를 mon2scb를 통해 받은 후, 실제값 tx_data와 비교
-- PASS / FAIL 여부를 판단하여 log에 출력
-- 다음 tr 값 생성을 위해 gen_next_event를 generator로 전달
+- top_transaction expected_q[$]; -> transaction을 저장할 공간 선언
+- gen2scb_mbox에 .get을 통해 예상 데이터 expected_tr 저장 후 push_back을 통해 맨 뒤에 추가
+- expected_q의 저장 공간이 비어 있지 않을 때 비교 시작
+- 비교 시작 전 pop_front를 통해 예상값 추출 후 expected_tr에 전달 * expected 예상값과 actual 실제값이 동일 하면 pass 처리, 값이 다르면 fail 처리
+- 비교가 끝이 나면 비교가 끝나는 것을 알리기 위해 last_item_compared라는 이벤트를 발생
 
 #### environment
-- gen, drv, mon, scb 4개의 프로세스를 fork-join_any문을  통해 병렬 실행 
-- 모든 전송 완료 후 최종 report를 출력
+- new() 함수를 통해 mailbox를 각각 생성 및 연결8개의 데이터 비트를 순서대로 샘플링
+- gen, drv, mon, scb 4개의 컴포넌트를 병렬로 동시 실행
+- last_item_compared 이벤트를 통해 비교를 끝난 것을 확인 후 report를 통해 최종 결과 출력 
 <br>
 
 ## Top Block Diagram
