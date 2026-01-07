@@ -26,6 +26,11 @@
 ## Module별 시나리오 
 ### UART_TX
 <img width="442" height="356" alt="image" src="https://github.com/user-attachments/assets/f5413be5-4b1a-4eff-a25a-c210e8bd5938" />
+transaction
+- 랜덤 입력 데이터 -> 8bit tx_data
+- monitor에서 감시를 위한 데이터 -> start, tx_busy, tx 
+- log에서 출력할 display 테스크를 생성
+
 <br>
 
 ### UART_RX
