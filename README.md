@@ -14,27 +14,13 @@
 <br>
 
 ## 검증 환경 구성
-### SystemVerilog의 클래스 기반 검증 환경을 UART_TX, UART_RX, FIFO, Loopback 각 단계별로 구축하였습니다.
-Interface: 하드웨어(DUT)와 검증 환경(Testbench) 사이의 신호를 연결하는 통로 역할을 수행합니다.
-
-
-### Transaction: 검증에 사용되는 데이터 단위로, 랜덤 데이터를 생성하여 다양한 시나리오를 테스트합니다.
-
-
-### Generator & Driver:
-
-
-### Generator: 제약 조건을 기반으로 유효한 테스트 데이터를 생성합니다.
-
-Driver: 생성된 데이터를 인터페이스를 통해 설계 모듈(DUT)에 입력 신호로 전달합니다.
-
-Monitor & Scoreboard:
-
-
-Monitor: DUT의 출력 신호를 관찰하고 이벤트를 수집합니다.
-
-Scoreboard: 출력 데이터와 예상 결과값(Golden Model)을 비교하여 Pass/Fail을 판별합니다.
-<img width="1297" height="1040" alt="image" src="https://github.com/user-attachments/assets/2a2ecddf-41ca-4c6e-84ac-ad3cc8863bc8" />
+### SystemVerilog의 클래스 기반 검증 환경을 UART_TX, UART_RX, FIFO, Loopback 각 단계별로 구축
+Interface: 하드웨어(DUT)와 검증 환경(Testbench) 사이의 신호를 연결하는 통로 역할 수행
+Transaction: 검증에 사용되는 데이터 단위로, 랜덤 데이터를 생성하여 다양한 시나리오 테스트
+Generator: 제약 조건을 기반으로 유효한 테스트 데이터 생성
+Driver: 생성된 데이터를 인터페이스를 통해 설계 모듈(DUT)에 입력 신호로 전달
+Monitor: DUT의 출력 신호를 관찰하고 이벤트 수집
+Scoreboard: 출력 데이터와 예상 결과값(Golden Model)을 비교하여 Pass/Fail 판별
 
 ## RISC-V Instruction Set
 <img width="2380" height="684" alt="image" src="https://github.com/user-attachments/assets/cd1cdcc8-23c5-4eea-a874-a54215ac40cc" />
