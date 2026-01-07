@@ -24,7 +24,7 @@
 <br>
 
 ## Module별 시나리오 
-<img width="1297" height="1040" alt="image" src="https://github.com/user-attachments/assets/48a98348-a48d-44d8-b90f-fc089e969538" />
+<img width="897" height="640" alt="image" src="https://github.com/user-attachments/assets/48a98348-a48d-44d8-b90f-fc089e969538" />
 <br>
 
 ## Top Block Diagram
